@@ -20,7 +20,7 @@ app.run(function($rootScope) {
 
 if('serviceWorker' in navigator) {
   console.log('service worker regesteration in progress');
-  navigator.serviceWorker.register('scripts/services/global.js').then(function() {
+  navigator.serviceWorker.register('service-worker.js').then(function() {
 
   console.log('service worker regesteration complete');
 }, function () {
