@@ -8,6 +8,7 @@ self.addEventListener("install", function(event) {
       .then(function(cache) {
         return cache.addAll([
           '/',
+          'shikhar0507.github.io',
           'app.js',
           'scripts/controllers/home.js',
           'scripts/services/services.js',
