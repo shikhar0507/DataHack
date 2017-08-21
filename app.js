@@ -1,5 +1,5 @@
 var app = angular.module('app',['ui.router'])
-.constant('URL','')
+
 
 app.config(function($stateProvider, $urlRouterProvider) {
 
@@ -14,4 +14,19 @@ app.config(function($stateProvider, $urlRouterProvider) {
     })
 
 
+})
+
+app.run(function($rootScope) {
+
+if('serviceWorker' in navigator) {
+  console.log('service worker regesteration in progress');
+  navigator.serviceWorker.register('scripts/services/global.js').then(function() {
+
+  console.log('service worker regesteration complete');
+}, function () {
+  console.log('service worker regesteration failure');
 });
+} else {
+  console.log('service worker no supported');
+}
+})
