@@ -8,11 +8,11 @@ self.addEventListener("install", function(event) {
       .then(function(cache) {
         return cache.addAll([
           '/',
-          '/app.js',
-          '/scripts/controllers/home.js',
-          '/scripts/services.js',
-          '/bower_components/angular/angular.min.js',
-          '/bower_components/angular-ui-router/release/angular-ui-router.min.js'
+          'app.js',
+          'scripts/controllers/home.js',
+          'scripts/services.js',
+          'bower_components/angular/angular.min.js',
+          'bower_components/angular-ui-router/release/angular-ui-router.min.js'
 
         ]);
       })
