@@ -1,0 +1,22 @@
+{
+  "name": "WebApp",
+  "description": "Foodees Task",
+  "main": "index.html",
+  "authors": [
+    "shikhar"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.6",
+    "angular-ui-router": "0.3.1"
+  }
+}

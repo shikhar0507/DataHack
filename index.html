@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <!DOCTYPE html>
+  <!--[1] Meta Content -->
+
+  <meta charset="utf-8">
+  <meta name="application-name" content="Progressive Web App" />
+  <meta name="description" content="Internship task for Foodees" />
+  <meta name="keywords" content="HTML5 SASS AngularJS" />
+  <meta name="author"   content="Shikhar Kapila" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--[1] Meta content closed -->
+
+    <title>Progressive Web App</title>
+  <!--[2] Compiled Sass Files -->
+    <link href="styles/scss/HomePage.css" type="text/css" rel="stylesheet" />
+  <!--[2] Compiled Sass Files -->
+</head>
+
+<body ng-app="app">
+
+<div ui-view>
+</div>
+
+
+
+
+<!-- [3] Bower Components Scripts -->
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+<!-- [3] Bower Components Scripts -->
+
+<!-- [4] Angular Scripts -->
+<script src="app.js"></script>
+<script src="scripts/controllers/home.js"></script>
+<script src="scripts/services/services.js"></script>
+
+
+<!-- [4] Angular Scripts -->
+</body>
+
+</html>
