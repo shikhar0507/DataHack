@@ -31,10 +31,10 @@ self.addEventListener("fetch", function(event) {
                 caches
                 .match(event.request)
                 .then(function(cached) {
-                    var networked = fetch(event.request) {
-                        .then(fetchedFromNetwork, unableToResolve) {
+                    var networked = fetch(event.request)
+                        .then(fetchedFromNetwork, unableToResolve)
                             .catch(unableToResolve)
-                            console.log('fetch event', cached ? '(cahed)' : '(network)', event.request);
+                            console.log('fetch event', cached ? '(cahed)' : '(network)', event.request.url);
                             return cahed || networked;
                             function fetchedFromNetwork(response) {
                                 var CacheCopy = response.clone();
@@ -56,12 +56,12 @@ self.addEventListener("fetch", function(event) {
                                     statusText: 'Service Unavailable',
                                     headers: new Headers({
                                         'Content-Type': 'text/html'
-                                    })
-                                });
-                            }
-                        }
-                    }))
-            })
+                                      })
+                                         });
+                                       }
+                                     })
+                                 );
+                               });
 
             self.addEventListener("activate", function(event) {
               console.log('WORKER: activate event in progress.');
