@@ -1,12 +1,12 @@
 {
-  "name": "WebApp",
-  "description": "Foodees Task",
-  "main": "index.html",
+  "name": "dataHack",
+  "homepage": "https://github.com/shikhar0507/ProgressiveWebApp",
   "authors": [
     "shikhar"
   ],
+  "description": "data-visualization-maps",
+  "main": "index.html",
   "license": "MIT",
-  "homepage": "",
   "private": true,
   "ignore": [
     "**/.*",
@@ -16,7 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "1.5.6",
-    "angular-ui-router": "0.3.1"
+    "angular-ui-router": "1.0.7",
+    "angular": "1.5.11"
   }
 }
